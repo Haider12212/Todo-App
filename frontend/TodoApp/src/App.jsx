@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} /> {/* Add route for Register component */}
-         
+        <Route path="/todos/:userId" element={<SomePage />} /> {/* Make the todos route dynamic */}
       </Routes>
     </BrowserRouter>
   );

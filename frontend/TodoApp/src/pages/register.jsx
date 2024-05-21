@@ -23,7 +23,8 @@ const Register = () => {
             // Handle successful registration (e.g., redirect to login)
             // Optionally, you can automatically log in the user after successful registration
             // For example:
-            // login(response.data.userId);
+            login(response.data.userId);
+            window.location.href = '/login'; // Redirect to login page
         } catch (error) {
             console.error(error);
             setError('Registration failed');
